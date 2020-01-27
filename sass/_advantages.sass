@@ -1,0 +1,80 @@
+.advantages
+    margin-top: 70px
+    
+.design-section
+    margin-top: 97px
+    padding-left: 78px
+    width: 350px
+    
+.advantages
+    &__heading-h3
+        +robotobold
+        font-size: 20px
+        text-transform: uppercase
+        letter-spacing: 1.6px
+        color: $text-blue
+        margin-bottom: 80px
+    &__heading-h2
+        +rubik
+        font-size: 40px
+        letter-spacing: 3.2px
+        margin-bottom: 23px
+    &__text
+        +robotolight
+        font-size: 18px
+        line-height: 30px
+        margin-bottom: 0px
+    &__list
+        margin-top: 15px
+        &__item
+            list-style-type: none
+            margin-bottom: 15px
+            margin-left: 5px
+        &__item::before
+            content: ''
+            background: url('../img/list-style-image.png') no-repeat center center
+            top: 20px
+            left: -45px
+            display: block
+            position: relative
+            width: 30px
+            height: 5px
+        
+        
+
+.color-section
+    margin-top: 465px
+    background: url('../img/advantages-gray-arrow.png') no-repeat 70px 19px
+    &__text
+        margin-left: 120px
+        width: 240px
+        margin-bottom: 56px
+    &__heading-h2
+        margin-left: 120px
+    &__scooter
+        margin-top: 28px
+        margin-left: 18px
+
+.colors
+    margin-left: 120px
+
+.color-circle
+    height: 20px
+    width: 20px
+    background-color: black
+    display: inline-block
+    border-radius: 100%
+    margin: 0 15px
+    
+
+.color-circle:first-child
+    margin-left: 20px
+
+.color-circle:last-child
+    margin-right: 0
+    margin-left: 12px
+
+.color
+    @each $color_name, $color in $circle-colors
+        &_#{$color_name}
+            background-color: $color

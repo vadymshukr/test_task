@@ -1,0 +1,66 @@
+.hero
+    background: url('../img/hero1.png') no-repeat -20% center
+    background-size: contain
+    height: 878px
+    padding-top: 0px
+    overflow: hidden
+    &__hero-text
+        text-transform: uppercase
+        margin-top: -73px
+        &__h1
+            width: 654px
+            height: 250px
+            +rubik
+            font-size: 80px
+            line-height: 97px
+            letter-spacing: 6.4px
+            &__version
+                letter-spacing: -12px
+        &__description
+            +robotobold
+            width: 330px
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 1.6px
+    &__watch-video-button
+        height: 200px
+        width: 150px
+        position: relative
+        left: 375px
+        top: 160px
+        background-color: transparent
+        &__text
+            +robotobold
+            font-size: 12px
+            height: 26px
+            width: 71px
+            transform: rotate(270deg)
+            display: block
+            float: left
+        &__arrow
+            float:left
+            position: relative
+            top: -10px
+            left: -22px
+            background-color: transparent         
+    &__watch-video-button::after
+        content: ''
+        background: url(../img/gray_arrow.png) no-repeat 12px 0px
+        top: -15px
+        position: relative 
+        display: block
+        height: 100px
+        width: 100px
+    &__video
+        overflow: hidden
+        position: relative
+        top: -565px
+        left: 40.5%
+        z-index: -1                
+
+
+
+       
+        
+
+    
