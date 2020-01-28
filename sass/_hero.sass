@@ -1,12 +1,14 @@
 .hero
-    background: url('../img/hero1.png') no-repeat -20% center
-    background-size: contain
+    background: url('../img/hero2-new.png') no-repeat center center
+    background-size: cover
+    position: relative
     height: 878px
     padding-top: 0px
     overflow: hidden
     &__hero-text
         text-transform: uppercase
         margin-top: -73px
+        position: absolute
         &__h1
             width: 654px
             height: 250px
@@ -23,26 +25,9 @@
             line-height: 30px
             letter-spacing: 1.6px
     &__watch-video-button
-        height: 200px
-        width: 150px
         position: relative
         left: 375px
-        top: 160px
-        background-color: transparent
-        &__text
-            +robotobold
-            font-size: 12px
-            height: 26px
-            width: 71px
-            transform: rotate(270deg)
-            display: block
-            float: left
-        &__arrow
-            float:left
-            position: relative
-            top: -10px
-            left: -22px
-            background-color: transparent         
+        top: 160px        
     &__watch-video-button::after
         content: ''
         background: url(../img/gray_arrow.png) no-repeat 12px 0px
@@ -54,12 +39,26 @@
     &__video
         overflow: hidden
         position: relative
-        top: -565px
-        left: 40.5%
+        padding-left: 80px
         z-index: -1                
 
-
-
+.watch-video-button
+        height: 200px
+        width: 150px
+        &__text
+            +robotobold
+            text-transform: uppercase
+            font-size: 12px
+            height: 26px
+            width: 71px
+            transform: rotate(270deg)
+            display: block
+            float: left
+        &__arrow
+            float:left
+            position: relative
+            top: -10px
+            left: -22px        
        
         
 

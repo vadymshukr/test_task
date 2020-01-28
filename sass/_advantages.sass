@@ -3,8 +3,8 @@
     
 .design-section
     margin-top: 97px
-    padding-left: 78px
-    width: 350px
+    padding-left: 20%
+    max-width: 350px
     
 .advantages
     &__heading-h3
@@ -43,20 +43,27 @@
         
 
 .color-section
-    margin-top: 465px
+    margin-top: 430px
     background: url('../img/advantages-gray-arrow.png') no-repeat 70px 19px
+    overflow: hidden
     &__text
-        margin-left: 120px
-        width: 240px
+        margin-left: 30%
+        max-width: 240px
         margin-bottom: 56px
     &__heading-h2
-        margin-left: 120px
+       margin-left: 30%
     &__scooter
+        width: 100%
+        overflow: hidden
+        position: relative
         margin-top: 28px
-        margin-left: 18px
+        margin-left: 5%
 
 .colors
-    margin-left: 120px
+    margin-left: 30%
+    display: flex
+    justify-content: space-between
+    padding: 0 5%
 
 .color-circle
     height: 20px
@@ -64,16 +71,8 @@
     background-color: black
     display: inline-block
     border-radius: 100%
-    margin: 0 15px
+    //margin: 0 15px
     
-
-.color-circle:first-child
-    margin-left: 20px
-
-.color-circle:last-child
-    margin-right: 0
-    margin-left: 12px
-
 .color
     @each $color_name, $color in $circle-colors
         &_#{$color_name}
