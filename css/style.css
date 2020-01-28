@@ -29,7 +29,6 @@
 header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: #000000;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.12px;
@@ -65,6 +64,11 @@ header {
 
 .navbar__parameters {
   margin-left: 67px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .navbar__list li {
@@ -159,6 +163,19 @@ header {
 
 .advantages {
   margin-top: 70px;
+}
+
+.video-section {
+  position: relative;
+  min-height: 750px;
+}
+
+.video-section__video-item {
+  padding-right: 7%;
+  float: left;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .design-section {
