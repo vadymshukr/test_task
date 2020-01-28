@@ -26,6 +26,12 @@
           flex: 0 0 66.6%;
 }
 
+.columnhalf {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
 header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -105,7 +111,7 @@ header {
 
 .hero__hero-text__h1 {
   width: 654px;
-  height: 250px;
+  margin-bottom: 15px;
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
   font-size: 80px;
@@ -124,6 +130,18 @@ header {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 1.6px;
+  min-height: 250px;
+}
+
+.hero__hero-text__description::after {
+  content: '';
+  background: url("../img/hero-blue-arrow.png") no-repeat top center;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  height: 100px;
+  width: 11px;
+  display: block;
 }
 
 .hero__watch-video-button {
@@ -183,7 +201,7 @@ header {
 }
 
 .video-section__video-item {
-  padding-right: 7%;
+  padding-right: 5%;
   float: left;
   position: absolute;
   right: 0;
@@ -245,7 +263,7 @@ header {
 
 .color-section {
   margin-top: 430px;
-  background: url("../img/advantages-gray-arrow.png") no-repeat 70px 19px;
+  background: url("../img/advantages-gray-arrow.png") no-repeat 70px 50px;
   overflow: hidden;
 }
 
@@ -286,6 +304,21 @@ header {
   border-radius: 100%;
 }
 
+.color-circle__active::after {
+  content: '';
+  background: url("../img/advantages-colors-arrow.png") no-repeat top center;
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 5px;
+  height: 50px;
+  width: 10px;
+}
+
+.color-circle:hover {
+  cursor: pointer;
+}
+
 .color_yellow {
   background-color: #e2e837;
 }
@@ -312,17 +345,35 @@ header {
   position: relative;
   height: 878px;
   overflow: hidden;
-  margin-top: 235px;
+  margin-top: 230px;
 }
 
 .modes__image {
-  padding-left: 85px;
+  padding-left: 7.4%;
 }
 
 .modes__watch-video-button {
   position: relative;
-  left: 400px;
-  top: 100px;
+  left: 103%;
+  top: 11%;
+}
+
+.modes__watch-video-button::before {
+  content: '';
+  background: url(../img/modes-watch-video-arrow.png) no-repeat top center;
+  width: 160px;
+  height: 480px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: -500px;
+  left: -128px;
+}
+
+.modes-section-highlights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modes-section-highlights__block {
@@ -381,6 +432,11 @@ header {
   margin-bottom: 0px;
 }
 
+.modes-section__bold-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
 .modes-section__list {
   margin-top: 15px;
 }
@@ -407,7 +463,7 @@ header {
   background-size: cover;
   height: 790px;
   position: relative;
-  padding-top: 101px;
+  padding-top: 70px;
   margin-top: -7px;
 }
 
@@ -423,6 +479,7 @@ header {
   text-transform: uppercase;
   line-height: 30px;
   letter-spacing: 1.6px;
+  margin-bottom: 75px;
 }
 
 .for-who-section__text {
@@ -439,7 +496,7 @@ header {
 
 .for-who-section__text2 {
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 65px;
 }
 
 .for-who-section__button {

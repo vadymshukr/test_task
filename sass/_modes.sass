@@ -4,15 +4,26 @@
     position: relative
     height: 878px
     overflow: hidden
-    margin-top: 235px
+    margin-top: 230px
     &__image
-        padding-left: 85px
+        padding-left: 7.4%
     &__watch-video-button
         position: relative
-        left: 400px
-        top: 100px
+        left: 103%
+        top: 11%
+    &__watch-video-button::before
+        content: ''
+        background: url(../img/modes-watch-video-arrow.png) no-repeat top center
+        width: 160px
+        height: 480px
+        display: block
+        position: absolute
+        z-index: 2
+        top: -500px
+        left: -128px
         
 .modes-section-highlights
+    display: flex
     &__block
         margin-top: 57px
         display: inline-block
@@ -48,6 +59,8 @@
         font-size: 18px
         line-height: 30px
         margin-bottom: 0px
+    &__bold-text
+        +robotobold
     &__list
         margin-top: 15px
         &__item

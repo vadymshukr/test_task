@@ -5,7 +5,7 @@
     position: relative
     min-height: 750px
     &__video-item
-        padding-right: 7%
+        padding-right: 5%
         float: left
         position: absolute
         right: 0
@@ -54,7 +54,7 @@
 
 .color-section
     margin-top: 430px
-    background: url('../img/advantages-gray-arrow.png') no-repeat 70px 19px
+    background: url('../img/advantages-gray-arrow.png') no-repeat 70px 50px
     overflow: hidden
     &__text
         margin-left: 30%
@@ -81,8 +81,19 @@
     background-color: black
     display: inline-block
     border-radius: 100%
-    //margin: 0 15px
-    
+    &__active::after
+        content: ''
+        background: url('../img/advantages-colors-arrow.png') no-repeat top center
+        display: block
+        position: relative
+        top: 30px
+        left: 5px
+        height: 50px
+        width: 10px
+
+.color-circle:hover
+    cursor: pointer
+
 .color
     @each $color_name, $color in $circle-colors
         &_#{$color_name}

@@ -11,7 +11,7 @@
         position: absolute
         &__h1
             width: 654px
-            height: 250px
+            margin-bottom: 15px
             +rubik
             font-size: 80px
             line-height: 97px
@@ -24,6 +24,17 @@
             font-size: 20px
             line-height: 30px
             letter-spacing: 1.6px
+            min-height: 250px
+        &__description::after
+            content: ''
+            background: url('../img/hero-blue-arrow.png') no-repeat top center
+            position: relative
+            top: 30px
+            left: 30px
+            height: 100px
+            width: 11px
+            display: block
+            
     &__watch-video-button
         position: relative
         left: 375px
